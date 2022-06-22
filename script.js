@@ -31,28 +31,6 @@ function capitalize(str, result) {
     result.innerText =
         str.charAt(0).toUpperCase() + str.substring(1).toLowerCase();
 }
-/*
-    Below was a test of the capitalize function.. no idea what i was doing.
-
-  firstLetter = str.charAt(0);
-  uppercase = firstLetter.toUpperCase();
-
-  output = firstLetter + 
-  output = document.getElementById("capitalizeResult");
-}
-
-/*
-    str = document.getElementsByClassName("capitalizeInput")[0].value;
-    if (str.charAt(0) === str.charAt(0).toUpperCase()) {
-        result = str;
-    } else {
-            letter = str.charAt(0);
-            uppercase = letter.toUpperCase();
-            output = str.replace(letter, uppercase);
-    }
-    output = document.getElementById("capitalizeOutput");
-    result.innerText = str.charAt(0).toUpperCase() + str.slice(1);
-    */
 
 /*
 Write a function called lastLetter that takes a string and returns the very last letter of that string:
