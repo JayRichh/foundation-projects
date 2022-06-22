@@ -1,17 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700&family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700&family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body    {
-    font-family: 'Exo 2', sans-serif;
-    background-color: #fafafa;
+body {
+  font-family: "Exo 2", sans-serif;
+  background-color: #fafafa;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 2rem;
+header {
+    display: flex;
+    justify-content: space-between;
 }
 
+.left,
+.right {
+    display: flex;
+    flex-direction: row;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.content {
+  margin: 2rem;
+}
+
+.wrapper {
+  margin-right: auto; /* 1 */
+  margin-left: auto; /* 1 */
+
+  max-width: 960px; /* 2 */
+
+  padding-right: 10px; /* 3 */
+  padding-left: 10px; /* 3 */
+}

@@ -8,28 +8,46 @@
     <script src="script.js"></script>
     <title>Foundations Projects</title>
   </head>
+
   <body>
     <header>
-      <h1>Learning HTML/CSS/JavaScript</h1>
+      <div class="left">
+        <h1>Foundations Projects</h1>
+      </div>
+      <div class="right">
+        <h1>HTML</h1>
+        <h1>CSS</h1>
+        <h1>JavaScript</h1>
+      </div>
     </header>
     <main>
+      <hr />
       <div class="wrapper">
+        <!-- wrapper div for the entire page -->
 
         <h2>
           Write a function called add7 that takes one number and returns that
           number + 7
         </h2>
         <div class="content">
-            <input type="text" />
-            <button onclick="add7()">Add 7</button>
+          <input class="add7Input" type="number" type=”tel” />
+          <!-- input for the string -->
+          <button class="btn" onclick="add7()">add7</button>
+          <!-- onclick function call add7() -->
+            <p id="add7Result"></p>
         </div>
-        
+
         <h2>
           Write a function called multiply that takes 2 numbers and returns
           their product.
         </h2>
         <div class="content">
-          <p></p>
+          <input class="multiplyInput1" type="number" type=”tel” />
+          <input class="multiplyInput2" type="number" type=”tel” />
+          <!-- input for the string -->
+          <button class="btn" onclick="multiply()">multiply</button>
+          <!-- onclick function call multiply() -->
+          <p id="multiplyResult"></p>
         </div>
 
         <h2>
@@ -38,7 +56,11 @@
           can take strings that are lowercase, UPPERCASE or BoTh.
         </h2>
         <div class="content">
-          <p></p>
+          <input class="capitalizeInput" type="text" />
+          <!-- input for the string -->
+          <button class="btn" onclick="capitalize()">capitalize</button>
+          <!-- onclick function call capitalize() -->
+          <p id="capitalizeOutput"></p>
         </div>
 
         <h2>
@@ -46,7 +68,11 @@
           very last letter of that string:
         </h2>
         <div class="content">
-          <p></p>
+          <input class="lastLetterInput" type="text" />
+          <!-- input for the string -->
+          <button class="btn" onclick="lastLetter()">lastLetter</button>
+          <!-- onclick function call lastLetter() -->
+          <p id="lastLetterResult"></p>
         </div>
       </div>
     </main>
