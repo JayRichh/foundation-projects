@@ -63,3 +63,22 @@ function lastLetter(str, result) {
     result = document.getElementById("lastLetterResult");
     result.innerText = str.charAt(str.length - 1);
 }
+
+
+//Write a program that takes a user's input and prints the numbers from one to the number the user entered. However, for multiples of three print Fizz instead of the number and for the multiples of five print Buzz. For numbers which are multiples of both three and five print FizzBuzz.
+
+function fizz(answer, result) {
+    answer = document.getElementsByClassName("fizzInput")[0].value;
+    result = document.getElementById("fizzResult");
+    for (i = 1; i <= answer; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            result.innerText += "FizzBuzz ";
+        } else if (i % 3 === 0) {
+            result.innerText += "Fizz ";
+        } else if (i % 5 === 0) {
+            result.innerText += "Buzz ";
+        } else {
+            result.innerText += i + " ";
+        }
+    }
+}
